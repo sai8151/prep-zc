@@ -20,6 +20,7 @@ void printWordPattern(const std::string &word)
     {
         matrix[i][i] = word[i];
         matrix[i][n - i - 1] = word[i];
+        printf("%d %d\n", (n - i - 1), i);
     }
 
     // Print the matrix
